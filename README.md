@@ -14,9 +14,9 @@
         - **Bangers 21-22 (see [data/in_bangers.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/in_bangers.csv):** data pertaining to episodes individually designated as "bangers" based on pre-determined critera of stakeholders
         - **Bangers 2022 (see [data/bangers_2022.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/bangers_2022.csv):** "" filter from Jan 2022-March2022  
 - Correlation Analysis
-    - correlation matrices are created across different time frames/data samples to assess correlation in episode-level metrics 
+    - correlation matrices are created across different time frames/data samples to assess correlations across episode-level metrics 
 - Regression 
-    - a number of regression methods are tried and tested on selected high-correlation relationships (>0.70 pearson correlation coefficient - spearman in cases on non-linear relationships).
+    - several regression models are assesed amongst selected metrics high-correlation coefficients to further assess relationship strength and predictive power between/amongst variables(>0.70 pearson correlation coefficient/spearman in cases on non-linear relationships).
 
 ## Results 
 
@@ -28,6 +28,8 @@
  
 ![Screen Shot 2022-05-16 at 11 21 20 PM](https://user-images.githubusercontent.com/79600550/168722115-b2714e30-db3a-47c2-9a0a-ab8e1ed7f508.png)
 
+### Spearman Matrix
+- Shares and subscribers see a substantial increase in correlation to unique viewers (UVs) when appying Spearman correlation matrix vs. Pearson
+    - indication to visualize relationship to explore further.
 
-
-   
+![Screen Shot 2022-05-16 at 11 26 50 PM](https://user-images.githubusercontent.com/79600550/168722905-201fdbd1-be69-4098-8cdd-f054caacc431.png)
