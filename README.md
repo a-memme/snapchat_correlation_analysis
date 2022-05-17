@@ -22,20 +22,20 @@
 ## Results 
 
 ### Correlation Analysis - Pearson vs Spearman
-##### Pearson's Rho
-- parametric correlation analysis (most popular), making (at the least) the following assumptions:
-    - variables are continuous in nature 
-    - relationship between variables is linear 
-    - homoscedasticity (to an acceptable degree)
-- not particularily robust to outliers
+- Pearson's Rho
+    - parametric correlation analysis (most popular), making (at the least) the following assumptions:
+        - variables are continuous in nature 
+        - relationship between variables is linear 
+        - homoscedasticity (to an acceptable degree)
+    - not particularily robust to outliers
 
-##### Spearman's Rho
-- non-parametric correlation analysis 
-    -  does not carry any assumptions about the distribution of the data 
-    -  variables should be measured on a scale that is at least ordinal
-        - i.e applies correlation analysis to ranks 
-- assesses monotonic relationships
-- more robust to outliers vs. Pearson
+- Spearman's Rho
+    - non-parametric correlation analysis 
+        -  does not carry any assumptions about the distribution of the data 
+        -  variables should be measured on a scale that is at least ordinal
+            - i.e applies correlation analysis to ranks 
+    - assesses monotonic relationships
+    - more robust to outliers vs. Pearson
 
 *see https://www.surveymonkey.com/market-research/resources/pearson-correlation-vs-spearman-correlation/?program=7013A000000mweBQAQ&utm_bu=CR&utm_campaign=71700000063500204&utm_adgroup=58700005673976109&utm_content=39700051703508296&utm_medium=cpc&utm_source=adwords&utm_term=p51703508296&utm_kxconfid=s4bvpi0ju&language=&test=&gclid=Cj0KCQjw_4-SBhCgARIsAAlegrXnjnB1_-0gzSdNUh4GdBfZzxZpA9oD4sGYd_DTvVrxGNzRDFClzSYaAg6PEALw_wcB&gclsrc=aw.ds and https://statistics.laerd.com/statistical-guides/pearson-correlation-coefficient-statistical-guide.php for more info*
 
