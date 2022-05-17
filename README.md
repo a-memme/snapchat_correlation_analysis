@@ -3,7 +3,9 @@
 ## Purpose 
 - Evaluate Snapchat viewership data to uncover insights regarding:
     -  Metric correlations across different dimensions (timeframes, individual snapchat channels, "banger" vs. regular episodes)
-        - how do the following KPIs relate to one another: how closely do they follow the same relationships/what are their relationships, and are they more relevant within different contexts (i.e timeframes or types of episodes)?
+        - how do the following KPIs relate to unique viewership?
+        - if there is significant relation between variables, what is the shape of this relationship? (i.e linear, polynomial, non-linear, etc.)
+        - does these relationships (strength of correlation/direction and shape of relationship) change under different time frames?
     -  Uniquess of "banger" episodes 
         - are there specific sets of metrics that share stronger/weaker relationships when filtering for outlier (banger) episodes?
 
@@ -42,8 +44,7 @@
 and [Staitics Laerd](https://statistics.laerd.com/statistical-guides/pearson-correlation-coefficient-statistical-guide.php) for further info*
 
 
-### 2021-2022 Data
-#### Pearson Method: Correlations to Viewership (Unique Viewers)
+### 2021-2022 Data - Correlation to Viewership (Pearson Method)
 - UVs are most highly correlated with the following metrics within the yearly dataset:
     - Unique completers: 0.95
     - Unique Topsnap Views: 0.98
@@ -51,7 +52,7 @@ and [Staitics Laerd](https://statistics.laerd.com/statistical-guides/pearson-cor
  
 ![Screen Shot 2022-05-16 at 11 21 20 PM](https://user-images.githubusercontent.com/79600550/168722115-b2714e30-db3a-47c2-9a0a-ab8e1ed7f508.png)
 
-#### Spearman Method - 2021-2022 Data
+### 2021-2022 Data (Spearman Method)
 - Shares and subscribers see a substantial increase in correlation to unique viewers (UVs) when appying Spearman correlation matrix vs. Pearson
     - Shares: Pearson = 0.59; Spearman = 0.74
     - Screenshots: Pearson = 0.51; Spearman = 0.88
@@ -59,7 +60,7 @@ and [Staitics Laerd](https://statistics.laerd.com/statistical-guides/pearson-cor
 
 ![Screen Shot 2022-05-16 at 11 26 50 PM](https://user-images.githubusercontent.com/79600550/168722905-201fdbd1-be69-4098-8cdd-f054caacc431.png)
 
-#### Visualizing Shares & Screenshots
+### Visualizing Shares & Screenshots
 - Shares 
     - displaying what appears to be a asymptotic relationship with UVs - assessed further through the analysis.
 <img width="995" alt="Screen Shot 2022-05-17 at 12 05 22 AM" src="https://user-images.githubusercontent.com/79600550/168727140-4c240317-9e86-4d39-b872-33c5cb331bdc.png">
@@ -83,7 +84,7 @@ and [Staitics Laerd](https://statistics.laerd.com/statistical-guides/pearson-cor
         - indication of linear relationships on a individual channel-level 
 
 ## Regression 
-The purpose of performing regression analyses on the following metrics were to further support their respective correlation coefficients, and see if sufficient models could be built to accurately depcit these relationships. 
+The purpose of performing regression analyses on the following metrics was to provide supporting insight on their strong correlation values, and to investigate whether sufficient linear/non-linear models could be built to accurately depict these relationships. 
 
 *Note multiple regression was not performed due to multicolinearity of predictor variables (i.e those strongly correlated with UVs).*
 
@@ -95,7 +96,7 @@ The purpose of performing regression analyses on the following metrics were to f
     - as expected given the extremely high correlation coefficient of ~0.95
     - sufficient evidence to reject the 'hypothetical' null hypothesis - i.e there is an extremely low probability that the variance contributed to the model by the unique completer metric is merely due to chance. 
 - R2 = 0.90
-- Significant intercept value 
+- Significant intercept value: 
     - also expected - statistically significant intercepts indicate that there is substantial variability in y when x=0. This is expected as we assume there to be multiple influencers on viewership, in addition to the contextual understanding of initial social content distribution.
 - Approximate normal distribution of the residuals (for validity of the model - see below)
 
@@ -108,10 +109,10 @@ The purpose of performing regression analyses on the following metrics were to f
 ![Screen Shot 2022-05-17 at 6 30 28 PM](https://user-images.githubusercontent.com/79600550/168923085-19f2e477-da87-48db-8841-882b374c280b.png)
 - Significant p-value < 2e-16
 - R2 = 0.80
-    -  80% of the variability in this model can be explained by subcribers - less than unique completers, but expected based on correlation values & plot.
-- Significant intercept 1.05e-15
+    -  80% of the variability in this model can be explained by subcribers - less than unique completers, but expected based on correlation values.
+- Significant intercept value: 1.05e-15
 - Robust comparison 
-    - A robust linear regression model is also ran on this relationship to help account for any major sways due to outliers (see [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for code), however fits a slightly less accurate model. 
+    - A robust linear regression model is also ran on this relationship to help account for interference due to outliers (see [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for code), however fits a slightly less accurate model vs olsr.  
 
 ### Shares 
 
