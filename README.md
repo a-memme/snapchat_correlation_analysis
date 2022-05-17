@@ -21,7 +21,8 @@
 
 ## Results 
 
-### Correlation Analysis - Pearson vs Spearman
+## Correlation Analysis
+### Pearson vs Spearman
 - Pearson's Rho
     - parametric correlation analysis (most popular), making (at the least) the following assumptions:
         - variables are continuous in nature 
