@@ -21,7 +21,7 @@
 
 ## Results 
 
-## Correlation Analysis
+## Correlation
 ### Pearson vs Spearman
 - Pearson's Rho
     - parametric correlation analysis (most popular), making (at the least) the following assumptions:
@@ -67,7 +67,19 @@
     - displaying what appears to be several linear relationships to different degrees based on channel type - no correlation when assesing data overall, but indication that individual channels may see strong correlations between viewerships and screenshots. Assessed further through the analysis.
 <img width="1019" alt="Screen Shot 2022-05-17 at 12 06 38 AM" src="https://user-images.githubusercontent.com/79600550/168727185-9a8426e0-337f-4712-af4b-3484380efaf1.png">
 
-### Correlations on all data 
+### Correlations on all data sets
+<img width="655" alt="Screen Shot 2022-05-17 at 5 28 03 PM" src="https://user-images.githubusercontent.com/79600550/168913175-4293b3d0-4104-4016-babb-ddedfdb025c6.png">
+- Metrics with strongest correlations to viewerships (UVs):
+    - Unique topsnaps and Unique Completers 
+    - Subscribers 
+- Shares
+    - appear to form an asymptotic relationship with UVs
+    - are only strongly correlated with UVs when assessing "overall" data (i.e data that doesn't isolate for banger episodes)
+- Screenshots 
+    - not strongly correlated with UVs given the assumption of linearity across all data sets (i.e Pearson correlatin coefficients < 0.7)
+        - strong Spearman correlations between these two metrics but plotting the data revealed no apparent non-linear relationship 
+        - indication of linear relationships on a individual channel-level 
+
 
 
   
