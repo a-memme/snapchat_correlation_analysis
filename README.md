@@ -69,6 +69,7 @@
 
 ### Correlations on all data sets
 <img width="655" alt="Screen Shot 2022-05-17 at 5 28 03 PM" src="https://user-images.githubusercontent.com/79600550/168913175-4293b3d0-4104-4016-babb-ddedfdb025c6.png">
+
 - Metrics with strongest correlations to viewerships (UVs):
     - Unique topsnaps and Unique Completers 
     - Subscribers 
