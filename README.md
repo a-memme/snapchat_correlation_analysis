@@ -22,9 +22,11 @@
 
 ### Correlations to Viewership (Unique Viewers) - 2021-2022 Data 
 - UVs are most highly correlated with the following metrics within the yearly dataset:
-        - Unique completers: 0.95
-        - Unique Topsnap Views: 0.98
-        - Subscribers: 0.89!
-[Screen Shot 2022-05-16 at 11 21 20 PM](https://user-images.githubusercontent.com/79600550/168721947-5fb6d2fb-df0a-4499-b6ac-7fb0b709b167.png)
+    - Unique completers: 0.95
+    - Unique Topsnap Views: 0.98
+    - Subscribers: 0.89!
+![Screen Shot 2022-05-16 at 11 21 20 PM](https://user-images.githubusercontent.com/79600550/168722115-b2714e30-db3a-47c2-9a0a-ab8e1ed7f508.png)
+
+
 
    
