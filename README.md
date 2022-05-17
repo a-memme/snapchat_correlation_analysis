@@ -49,7 +49,9 @@
 
 ### Spearman Method - 2021-2022 Data
 - Shares and subscribers see a substantial increase in correlation to unique viewers (UVs) when appying Spearman correlation matrix vs. Pearson
-    - indication to explore relationship further to assess potential polynomial/non-linear relationships.
+    - Shares: Pearson = 0.59; Spearman = 0.74
+    - Screenshots: Pearson = 0.51; Spearman = 0.88
+- indication to explore relationship further to assess potential polynomial/non-linear relationships.
 
 ![Screen Shot 2022-05-16 at 11 26 50 PM](https://user-images.githubusercontent.com/79600550/168722905-201fdbd1-be69-4098-8cdd-f054caacc431.png)
 
