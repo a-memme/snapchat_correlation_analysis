@@ -24,7 +24,8 @@
 - UVs are most highly correlated with the following metrics within the yearly dataset:
     - Unique completers: 0.95
     - Unique Topsnap Views: 0.98
-    - Subscribers: 0.89!
+    - Subscribers: 0.89
+ 
 ![Screen Shot 2022-05-16 at 11 21 20 PM](https://user-images.githubusercontent.com/79600550/168722115-b2714e30-db3a-47c2-9a0a-ab8e1ed7f508.png)
 
 
