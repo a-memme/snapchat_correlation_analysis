@@ -41,8 +41,8 @@
 *see the following resources from [Survey Monkey](https://www.surveymonkey.com/market-research/resources/pearson-correlation-vs-spearman-correlation/?program=7013A000000mweBQAQ&utm_bu=CR&utm_campaign=71700000063500204&utm_adgroup=58700005673976109&utm_content=39700051703508296&utm_medium=cpc&utm_source=adwords&utm_term=p51703508296&utm_kxconfid=s4bvpi0ju&language=&test=&gclid=Cj0KCQjw_4-SBhCgARIsAAlegrXnjnB1_-0gzSdNUh4GdBfZzxZpA9oD4sGYd_DTvVrxGNzRDFClzSYaAg6PEALw_wcB&gclsrc=aw.ds)
 and [Staitics Laerd](https://statistics.laerd.com/statistical-guides/pearson-correlation-coefficient-statistical-guide.php) for further info*
 
-### 2021-2022 Data
 
+### 2021-2022 Data
 #### Pearson Method: Correlations to Viewership (Unique Viewers)
 - UVs are most highly correlated with the following metrics within the yearly dataset:
     - Unique completers: 0.95
@@ -68,6 +68,7 @@ and [Staitics Laerd](https://statistics.laerd.com/statistical-guides/pearson-cor
     - displaying what appears to be several linear relationships to different degrees based on channel type - no correlation when assesing data overall, but indication that individual channels may see strong correlations between viewerships and screenshots. Assessed further through the analysis.
 <img width="1019" alt="Screen Shot 2022-05-17 at 12 06 38 AM" src="https://user-images.githubusercontent.com/79600550/168727185-9a8426e0-337f-4712-af4b-3484380efaf1.png">
 
+
 ### Correlations on all data sets
 <img width="655" alt="Screen Shot 2022-05-17 at 5 28 03 PM" src="https://user-images.githubusercontent.com/79600550/168913175-4293b3d0-4104-4016-babb-ddedfdb025c6.png">
 
@@ -81,6 +82,11 @@ and [Staitics Laerd](https://statistics.laerd.com/statistical-guides/pearson-cor
     - not strongly correlated with UVs given the assumption of linearity across all data sets (i.e Pearson correlatin coefficients < 0.7)
         - strong Spearman correlations between these two metrics but plotting the data revealed no apparent non-linear relationship 
         - indication of linear relationships on a individual channel-level 
+
+## Regression 
+
+### Unique Completers 
+
 
 
 
