@@ -72,22 +72,31 @@ and [Staitics Laerd](https://statistics.laerd.com/statistical-guides/pearson-cor
 ### Correlations on all data sets
 <img width="655" alt="Screen Shot 2022-05-17 at 5 28 03 PM" src="https://user-images.githubusercontent.com/79600550/168913175-4293b3d0-4104-4016-babb-ddedfdb025c6.png">
 
-- Metrics with strongest correlations to viewerships (UVs):
-    - Unique topsnaps and Unique Completers 
-    - Subscribers 
+- Top 3 highly correlated metrics for 2021-2022 Data are consistent across all datasets. 
+    -   i.e unique completers, unique topsnap views, and subscribers.
 - Shares
     - appear to form an asymptotic relationship with UVs
-    - are only strongly correlated with UVs when assessing "overall" data (i.e data that doesn't isolate for banger episodes)
+    - are only strongly correlated with UVs when assessing "overall" data (2021-2022 data and 2022 data - i.e data that doesn't isolate for banger episodes)
 - Screenshots 
     - not strongly correlated with UVs given the assumption of linearity across all data sets (i.e Pearson correlatin coefficients < 0.7)
         - strong Spearman correlations between these two metrics but plotting the data revealed no apparent non-linear relationship 
         - indication of linear relationships on a individual channel-level 
 
 ## Regression 
+The purpose of performing regression analyses on the following metrics were to further support their respective correlation coefficients, and see if sufficient models could be built to accurately depcit these relationships. 
+
+* Note - multiple regression was not performed due to multicolinearity of predictor variables (i.e those strongly correlated with UVs). *
 
 ### Unique Completers 
+![Screen Shot 2022-05-17 at 5 58 32 PM](https://user-images.githubusercontent.com/79600550/168916960-c8950414-8164-4b14-96df-64b21a7e5aa5.png)
 
-
+![Screen Shot 2022-05-17 at 6 01 30 PM](https://user-images.githubusercontent.com/79600550/168917346-01f43a19-8b02-420d-9ea1-fc242b63b496.png)
+- Significant p-value 
+    - as expected given the extremely high correlation coefficient of ~0.95
+    - sufficient evidence to reject the 'hypothetical' null hypothesis - i.e there is an extremely low probability that the variance contributed to the model by the unique completer metric is merely due to chance. 
+- R2 = 0.90
+- Significant intercept value
+    - also expected - statistically significant intercepts indicate that there is substantial variability in y when x=0. This is expected as we assume there to be multiple influencers of viewership, in addition to the contextual understanding of how initial distribution of social content operates. 
 
 
   
