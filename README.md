@@ -22,14 +22,14 @@
 ## Results 
 
 ### Correlation Analysis - Pearson vs Spearman
-Pearson 
+#### Pearson's Rho
 - parametric correlation analysis (most popular), making (at the least) the following assumptions:
     - variables are continuous in nature 
     - relationship between variables is linear 
     - homoscedasticity (to an acceptable degree)
 - not particularily robust to outliers
 
-Spearman 
+#### Spearman's Rho
 - non-parametric correlation analysis 
     -  does not carry any assumptions about the distribution of the data 
     -  variables should be measured on a scale that is at least ordinal
@@ -49,6 +49,8 @@ Spearman
 
 ### Spearman Method - 2021-2022 Data
 - Shares and subscribers see a substantial increase in correlation to unique viewers (UVs) when appying Spearman correlation matrix vs. Pearson
-    - indication to visualize relationship to explore further.
+    - indication to explore relationship further to assess potential polynomial/non-linear relationships.
 
 ![Screen Shot 2022-05-16 at 11 26 50 PM](https://user-images.githubusercontent.com/79600550/168722905-201fdbd1-be69-4098-8cdd-f054caacc431.png)
+
+
