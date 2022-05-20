@@ -97,7 +97,7 @@ The purpose of performing regression analyses on the following metrics was to pr
     - sufficient evidence to reject the 'hypothetical' null hypothesis - i.e there is an extremely low probability that the variance contributed to the model by the unique completer metric is merely due to chance. 
 - R2 = 0.90
 - Significant intercept value: 
-    - also expected - statistically significant intercepts indicate that there is substantial variability in y when x=0. This is expected as we assume there to be multiple influencers on viewership, in addition to the contextual understanding of initial social content distribution.
+    - also expected - statistically significant intercepts indicate that there is substantial variability in y when x=0. This is expected as we assume there to be multiple influencers on viewership, in addition to the contextual understanding of how social content is initially distributed.
 - Approximate normal distribution of the residuals (for validity of the model - see below)
 
 ![Screen Shot 2022-05-17 at 5 59 22 PM](https://user-images.githubusercontent.com/79600550/168922690-3a885d77-11c3-4810-a5a5-2bab5ba8b0e7.png)
