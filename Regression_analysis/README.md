@@ -15,8 +15,7 @@ The purpose of performing regression analyses on the following metrics was to pr
     - also expected - statistically significant intercepts indicate that there is substantial variability in y when x=0. This is expected as we assume there to be multiple influencers on viewership, in addition to the contextual understanding of how variabe the initial distribution window for social content is.
 - Approximate normal distribution of the residuals (for validity of the model - see Figure below)
 
-![Screen Shot 2022-05-17 at 5 59 22 PM](https://user-images.githubusercontent.com/79600550/168922690-3a885d77-11c3-4810-a5a5-2bab5ba8b0e7.png)
-
+![Screen Shot 2022-05-19 at 10 20 24 PM](https://user-images.githubusercontent.com/79600550/169435780-55340dab-2974-4c67-b366-fd0fabad4d1f.png)
 
 ### Subcribers 
 ![Screen Shot 2022-05-17 at 6 31 33 PM](https://user-images.githubusercontent.com/79600550/168923062-03ea6dc0-0910-4bb8-93b6-d30e83f8fdff.png)
@@ -32,7 +31,8 @@ The purpose of performing regression analyses on the following metrics was to pr
       -  OLSR Regression - RSE = 741072 on 252 degrees of freedom
       -  RLM Regression - RSE = 446400 on 252 degrees of freedom
 
-![Screen Shot 2022-05-19 at 10 17 43 PM](https://user-images.githubusercontent.com/79600550/169435514-262f5b88-5020-420a-892a-90f33237c3fe.png)
+
+![Screen Shot 2022-05-19 at 10 19 05 PM](https://user-images.githubusercontent.com/79600550/169435666-0ffb3a8b-956e-4ddf-957d-a41bc27f7423.png)
 
 
 ### Shares 
