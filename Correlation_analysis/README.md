@@ -45,7 +45,7 @@ and [Staitics Laerd](https://statistics.laerd.com/statistical-guides/pearson-cor
 <img width="995" alt="Screen Shot 2022-05-17 at 12 05 22 AM" src="https://user-images.githubusercontent.com/79600550/168727140-4c240317-9e86-4d39-b872-33c5cb331bdc.png">
 
 - Screenshots 
-    - displaying what appears to be several linear relationships to different degrees based on channel type - no correlation when assesing data overall, but indication that individual channels may see strong correlations between viewerships and screenshots. Assessed further through the analysis.
+    - displaying what appears to be several linear relationships with substantially different slope values based on channel type - no correlation when assesing data overall, but indication that individual channels may see strong linear relationships between viewership and screenshots. Assessed further through the analysis.
 <img width="1019" alt="Screen Shot 2022-05-17 at 12 06 38 AM" src="https://user-images.githubusercontent.com/79600550/168727185-9a8426e0-337f-4712-af4b-3484380efaf1.png">
 
 
