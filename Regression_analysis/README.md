@@ -18,16 +18,13 @@ The purpose of performing regression analyses on the following metrics was to pr
 ![Screen Shot 2022-05-19 at 10 20 24 PM](https://user-images.githubusercontent.com/79600550/169435780-55340dab-2974-4c67-b366-fd0fabad4d1f.png)
 
 ### Subcribers 
-![Screen Shot 2022-05-17 at 6 31 33 PM](https://user-images.githubusercontent.com/79600550/168923062-03ea6dc0-0910-4bb8-93b6-d30e83f8fdff.png)
-
-![Screen Shot 2022-05-17 at 6 30 28 PM](https://user-images.githubusercontent.com/79600550/168923085-19f2e477-da87-48db-8841-882b374c280b.png)
 - Significant p-value < 2e-16
 - R2 = 0.80
     -  80% of the variability in this model can be explained by subcribers - less than unique completers, but expected based on correlation values.
 - Significant intercept value: 1.05e-15
 - RLM comparison 
-    - A robust linear regression model is also used to fit the linear relationship between UVs and subscribers to help account for outliers (see lines 82-85 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for code).
-    - Model provides a slightly more accurate representation when comparing RSE values and visual representation 
+    - A robust linear regression model is also used to fit the linear relationship between UVs and subscribers to help account for outliers (see lines 82-89 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for reference).
+    - Model provides a slightly more accurate representation when comparing RSE values and visual representation (See Image Below)
       -  OLSR Regression - RSE = 741072 on 252 degrees of freedom
       -  RLM Regression - RSE = 446400 on 252 degrees of freedom
 
