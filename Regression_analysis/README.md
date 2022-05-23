@@ -87,7 +87,7 @@ The purpose of performing regression analyses on the following metrics was to pr
 - equation for rectangular hyperbolas/saturation curve 
 - originally developed to model the relation between substrate concetration and reaction rate in enzyme activity 
 
-**Best Model - 3 parameter MM Model **
+**Best Model - 3 parameter MM Model**
 - even better visual representation of the asymptote (see below)
 - correation of y to predicted y = 0.79
 - RSE = 1016628 on 251 degrees of freedom 
