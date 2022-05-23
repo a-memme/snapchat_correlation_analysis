@@ -23,7 +23,7 @@ The purpose of performing regression analyses on the following metrics was to pr
     -  80% of the variability in this model can be explained by subcribers - less than unique completers, but expected based on correlation values.
 - Significant intercept value: 1.05e-15
 - RLM comparison 
-    - In order to control for a couple of outlier values, a robust linear model is fitted to the data as well and compared to ols regression.(see lines 82-89 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for reference).
+    - In order to control for outlier values, a robust linear model is also fitted to the data and compared to the olsr model.(see lines 82-89 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for reference).
     - Model provides a slightly more accurate representation when comparing RSE values as well as when visualizing the regression line (See Image Below)
       -  OLS Regression - RSE = 741072 on 252 degrees of freedom
       -  RLM Regression - RSE = 446400 on 252 degrees of freedom
@@ -49,5 +49,34 @@ The purpose of performing regression analyses on the following metrics was to pr
     - statistically significant intercept 
     - R2 = 0.64
     - RSE = 985900 on 247 degrees of freedom
+- Summary 
+    -  Bias vs Variance 
+        -  The 6th degree polynomial renders the best metrics (lower RSE and higher R2 value), however the curve is obviously overfit (high variance) - the model captures too much noise in the data, and would perform poorly on unseen data. 
+            - although the core purpose of the analysis isn't necessarily to build a predictive model, we would like to have confidence in our regression model to support our understanding of how the following two metrics interact with one another. 
+        - 4th degree polynomial provides the best visual representation, but is potentially too high in bias as its not as accurate as we would like (based on RSE and R2 values)
 
 ![Screen Shot 2022-05-23 at 6 18 09 PM](https://user-images.githubusercontent.com/79600550/169914038-24650332-0228-4dc8-9574-b9302e32f5a7.png)
+
+### GAM - Generalized Additive Model
+-"Middle-ground" model between simple linear models and ML regression
+    - i.e offer a fair amount of interpretability (such as in linear regression) while also maintaining an adequate level of complexity (such as in machine learning).
+- Consisted of smooths and splines 
+    - smooths are functions constructed of many smaller (basis) functions that can take a wide variety of shapes, and ultimately serve as parameters for the model. 
+*See https://noamross.github.io/gams-in-r-course/chapter1 for more info*
+
+#### R2 in Non-linear regression 
+- Although provided in summary statistics, the R2 value is often considered incompatible when dealing with non-linear regression models:
+    - explained variance + error variance does not = total variance (as it would for linear regression - including polynomial regression). Thus, a value between 0 and 1 would not always be representing a percentage of the whole. (see the following [resource](https://statisticsbyjim.com/regression/r-squared-invalid-nonlinear-regression/) for overview). 
+    - Study conducted by Spiess & Neumeyer, 2010 found that you will often experience many of the following issues if relying on R2 to assess nonlinear models:
+        - high values for both well-performing and extremely poor performing models 
+        - R2 value not always increasing for better models 
+        - Model selection will only lead to the correct decision (the best model) approxiamtely 28-43% of the time 
+- Given the above information, other model cues are relied on to determine adequacy: RSE, correlation of actual y to predicted y, and overall visual representation. 
+    
+Best Model - GAM k=5
+- best visual representation of the asymptote (see below)
+- correlation of y to predicted y = 0.78
+- RSE = 1030035
+
+![Screen Shot 2022-05-23 at 7 17 12 PM](https://user-images.githubusercontent.com/79600550/169919388-acc2322b-7f15-41eb-958d-732b73ea3b42.png)
+
