@@ -64,21 +64,21 @@ The purpose of performing regression analyses on the following metrics was to pr
     - i.e offer a fair amount of interpretability (such as in linear regression) while also maintaining an adequate level of complexity (such as in machine learning).
 - Consisted of smooths and splines 
     - smooths are functions constructed of many smaller (basis) functions that can take a wide variety of shapes, and ultimately serve as parameters for the model. 
+    - k = number of basis functions to use for each smooth term before any additional constraints are applied - (i.e puts a limit on the wiggliness of the function).
 *See https://noamross.github.io/gams-in-r-course/chapter1 for more info*
 
 #### R2 in Non-linear regression 
-- Although provided in summary statistics, the R2 value is often considered incompatible when dealing with non-linear regression models:
-    - explained variance + error variance does not = total variance (as it would for linear regression - including polynomial regression). Thus, a value between 0 and 1 would not always be representing a percentage of the whole. (see the following [resource](https://statisticsbyjim.com/regression/r-squared-invalid-nonlinear-regression/) for overview). 
+- Although provided in summary statistics, the R2 value is often considered incompatible when dealing with statistically nonlinear regression models:
+    - explained variance + error variance != total variance (as it would for linear regression - including polynomial regression). Thus, a value between 0 and 1 would not always be representing a percentage of the whole. (see the following [resource](https://statisticsbyjim.com/regression/r-squared-invalid-nonlinear-regression/) for overview). 
     - Study conducted by Spiess & Neumeyer, 2010 found that you will often experience many of the following issues if relying on R2 to assess nonlinear models:
         - high values for both well-performing and extremely poor performing models 
         - R2 value not always increasing for better models 
         - Model selection will only lead to the correct decision (the best model) approxiamtely 28-43% of the time 
-- Given the above information, other model cues are relied on to determine adequacy: RSE, correlation of actual y to predicted y, and overall visual representation. 
+- Given the above information, other model cues are relied on to determine adequacy: in our circumstance, the correlation of actual y to predicted y, and visual representation.
     
 **Best Model - GAM k=5**
 - best visual representation of the asymptote (see below)
 - correlation of y to predicted y = 0.78
-- RSE = 1030035
 
 ![Screen Shot 2022-05-23 at 7 17 12 PM](https://user-images.githubusercontent.com/79600550/169919388-acc2322b-7f15-41eb-958d-732b73ea3b42.png)
 
@@ -90,6 +90,8 @@ The purpose of performing regression analyses on the following metrics was to pr
 **Best Model - 3 parameter MM Model**
 - even better visual representation of the asymptote (see below)
 - correation of y to predicted y = 0.79
-- RSE = 1016628 on 251 degrees of freedom 
 
 ![Screen Shot 2022-05-23 at 7 26 52 PM](https://user-images.githubusercontent.com/79600550/169920194-98839ee2-59f4-4759-9d43-ef3c62badedb.png)
+
+## References
+Spiess, Andrej-Nikolai, Natalie Neumeyer. An evaluation of R2 as an inadequate measure for nonlinear models in pharmacological and biochemical research: a Monte Carlo approach. BMC Pharmacology. 2010; 10: 6.
