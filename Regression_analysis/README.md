@@ -58,7 +58,9 @@ The purpose of performing regression analyses on the following metrics was to pr
 ![Screen Shot 2022-05-23 at 6 18 09 PM](https://user-images.githubusercontent.com/79600550/169914038-24650332-0228-4dc8-9574-b9302e32f5a7.png)
 
 ### GAM - Generalized Additive Model
--"Middle-ground" model between simple linear models and ML regression
+*(see lines 138-153 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for reference)*
+
+- "Middle-ground" model between simple linear models and ML regression
     - i.e offer a fair amount of interpretability (such as in linear regression) while also maintaining an adequate level of complexity (such as in machine learning).
 - Consisted of smooths and splines 
     - smooths are functions constructed of many smaller (basis) functions that can take a wide variety of shapes, and ultimately serve as parameters for the model. 
@@ -80,3 +82,13 @@ Best Model - GAM k=5
 
 ![Screen Shot 2022-05-23 at 7 17 12 PM](https://user-images.githubusercontent.com/79600550/169919388-acc2322b-7f15-41eb-958d-732b73ea3b42.png)
 
+### Michaelis-Menten Model 
+- equation for rectangular hyperbolas/saturation curve 
+- originally developed to model the relation between substrate concetration and reaction rate in enzyme activity 
+
+Best Model - 3 parameter MM Model 
+- even better visual representation of the asymptote (see below)
+- correation of y to predicted y = 0.79
+- RSE = 1016628 on 251 degrees of freedom 
+
+![Screen Shot 2022-05-23 at 7 26 52 PM](https://user-images.githubusercontent.com/79600550/169920194-98839ee2-59f4-4759-9d43-ef3c62badedb.png)
