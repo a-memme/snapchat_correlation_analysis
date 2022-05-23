@@ -36,4 +36,18 @@ The purpose of performing regression analyses on the following metrics was to pr
 
 
 ### Polynomial Regression 
-- 
+- Polynomial models from the 2nd to the 6th degree tried and tested to fit the curved relationship. 
+- Polynomial ^4
+    -  best visual relationship of the asymptote (see scatterplot highlighted in blue below)
+    -  2/4 statistically significant polynomials (first and second)
+    -  statistically significant intercept 
+    -  R2 = 0.61
+    -  RSE = 1025000 on 249 degrees of freedom
+- Polynomial ^6
+    - overfit visual representation (See scatterplot highlighted in red below)
+    - 5/6 statistically significant polynomials (first, second, third, fifth, and sixth)
+    - statistically significant intercept 
+    - R2 = 0.64
+    - RSE = 985900 on 247 degrees of freedom
+
+![Screen Shot 2022-05-23 at 6 18 09 PM](https://user-images.githubusercontent.com/79600550/169914038-24650332-0228-4dc8-9574-b9302e32f5a7.png)
