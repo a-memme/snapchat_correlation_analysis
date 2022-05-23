@@ -58,7 +58,7 @@ The purpose of performing regression analyses on the following metrics was to pr
 ![Screen Shot 2022-05-23 at 6 18 09 PM](https://user-images.githubusercontent.com/79600550/169914038-24650332-0228-4dc8-9574-b9302e32f5a7.png)
 
 ### GAM - Generalized Additive Model
-*(see lines 138-153 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for reference)*
+*(see lines 136-153 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for reference)*
 
 - "Middle-ground" model between simple linear models and ML regression
     - i.e offer a fair amount of interpretability (such as in linear regression) while also maintaining an adequate level of complexity (such as in machine learning).
@@ -75,7 +75,7 @@ The purpose of performing regression analyses on the following metrics was to pr
         - Model selection will only lead to the correct decision (the best model) approxiamtely 28-43% of the time 
 - Given the above information, other model cues are relied on to determine adequacy: RSE, correlation of actual y to predicted y, and overall visual representation. 
     
-Best Model - GAM k=5
+**Best Model - GAM k=5**
 - best visual representation of the asymptote (see below)
 - correlation of y to predicted y = 0.78
 - RSE = 1030035
@@ -83,10 +83,11 @@ Best Model - GAM k=5
 ![Screen Shot 2022-05-23 at 7 17 12 PM](https://user-images.githubusercontent.com/79600550/169919388-acc2322b-7f15-41eb-958d-732b73ea3b42.png)
 
 ### Michaelis-Menten Model 
+*(See lines 162-181 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for reference)*
 - equation for rectangular hyperbolas/saturation curve 
 - originally developed to model the relation between substrate concetration and reaction rate in enzyme activity 
 
-Best Model - 3 parameter MM Model 
+**Best Model - 3 parameter MM Model **
 - even better visual representation of the asymptote (see below)
 - correation of y to predicted y = 0.79
 - RSE = 1016628 on 251 degrees of freedom 
