@@ -76,9 +76,10 @@ The purpose of performing regression analyses on the following metrics was to pr
         - Model selection will only lead to the correct decision (the best model) approxiamtely 28-43% of the time 
 - Given the above information, other model cues are relied on to determine adequacy: in our circumstance, the correlation of actual y to predicted y, and visual representation.
     
-**Best Model - GAM k=5**
-- best visual representation of the asymptote (see below)
-- correlation of y to predicted y = 0.78
+**Summary**
+- Best performing GAM - k=5
+    - better visual representation of the asymptote (vs. polynomials) - see image below
+    - correlation of y to predicted y = 0.78
 
 ![Screen Shot 2022-05-23 at 7 17 12 PM](https://user-images.githubusercontent.com/79600550/169919388-acc2322b-7f15-41eb-958d-732b73ea3b42.png)
 
@@ -87,9 +88,11 @@ The purpose of performing regression analyses on the following metrics was to pr
 - equation for rectangular hyperbolas/saturation curve 
 - originally developed to model the relation between substrate concetration and reaction rate in enzyme activity 
 
-**Best Model - 3 parameter MM Model**
-- even better visual representation of the asymptote (see below)
-- correation of y to predicted y = 0.79
+**Summary - Best Model Overall**
+- 3 parameter MM Model 
+- best visual representation of the asymptote overall - see image below
+    -  vs. polynomials and GAM's
+- highest correation of y to predicted y = 0.79
 
 ![Screen Shot 2022-05-23 at 7 26 52 PM](https://user-images.githubusercontent.com/79600550/169920194-98839ee2-59f4-4759-9d43-ef3c62badedb.png)
 
