@@ -26,7 +26,7 @@
 
 ### Correlations 
 *(see [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) for context)*
-- The strongest metrics correlated to viewership (Unique Viewers) are the following:
+- Metrics with strongest correlations to viewership:
     - Unique Topsnap Views and Unique Completers (0.93-0.98)
     - Subscribers added (0.89-0.92)
         - strongest correlated metric to viewership out of engagement metrics (i.e subcribers, screenshots and shares)
@@ -40,8 +40,8 @@
 *(See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) for context)*
 - Unique Topsnap Views & Unique Completers 
     - very close linear relationship to viewership (R2 = ~0.90)
-    - could potentially be perceived as an obvious finding as both metrics are by-nature viewership metrics in and of themselves. 
-    - understanding that particular quality of viewership metrics (number of unique completers of content, and number of unique viewers per each individual snap in any particular set of content) move closely in tandem with the number of unique viewers. 
+    - could potentially be perceived as an obvious finding as both metrics are by-nature viewership metrics. 
+    - provides insight toward the quality of viewership metrics (number of unique completers of content, and number of unique viewers per each individual snap in any particular set of content) and how closely they move in tandem with unique viewership
 - Subcribers added 
     - moderate linear relationship with viewership (R2 = ~0.80) - best modelled by a RLM to account for outliers.
 - Shares 
@@ -50,14 +50,11 @@
     - indicates a threshold value where the increase of shares becomes less relevant to the increase of unique viewers 
         - i.e as the number of shares increase, the rate of UV increase slows. 
     - outlier influence (see Outlier influence section in [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis)
-        - the asymptotic relationship between shares and viewership is strongly held up by a single outlier 
-        - when removing this outlier, the relationship is still apparent, however substantially weaker 
-            - not as concerning in this context as it my normally be as outlier episodes represent some of the data that we're most interested in analyzing within the social media context
-            - further analyses will look to perform the same regression at a future date when even more data is available.     
+        - asymptotic relationship is still quite apparent even with the removal of substantial outliers.   
 - Screenshots 
     - linear relationship with viewership when looking at data individual to each unique channel 
         - apparent under all channels except for 1 (channel_2d)
-    - the strength and rate of this relationship is unique to each channel, indicating a potential profile pertaining to each channel where screenshots hold different influence over its relationship with viewership. 
+    - the strength and rate of this relationship is unique to each channel, indicating a potential profile pertaining to each channel where screenshots interact with viewership at different rates. 
 
 ### Bangers 
 - The most strongly correlated metrics with viewership become even more strongly correlated when isolating for banger episodes 
@@ -76,10 +73,9 @@
 - All strongly correlated metrics have a positive linear relationship with viewership with the exception of shares
     - shares is the only metric with a nonlinear (asymptotic) relationship with viewership 
 - Correlation strength and the slope of the linear relationship between screenshots and viewership are channel-dependent 
-- The shape of metric to viewership relationships remain contsant across timeframes and datasets, regardless of correlation strength or regression performance.
+- The shape of metric to viewership relationships remain consistent across timeframes and datasets, regardless of correlation strength or regression performance.
 
 ## Future Analyses 
 - Regression analyses with a greater wealth of data 
-    - the nonlinear relationship with shares and viweership is only statistically satisifed when applied to overall data (not to bangers) - based on the visual representations of these datasets, one may be able to find more adequate models with a larger dataset. 
+    - the nonlinear relationship with shares and viweership is only statistically satisifed when applied to overall data (not to bangers) - based on the visual representations of these datasets, one may be able to find more adequate models with use of a larger dataset. 
     - Thus, future inferences will look to perform  the same analyses at a future date when more data is available. 
-  
