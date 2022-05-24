@@ -1,7 +1,10 @@
 # Regression 
 The purpose of performing regression analyses on the following metrics was to provide supporting insight on their corresponding correlation coefficients, and to investigate whether sufficient linear/non-linear models could be built to accurately depict these relationships. 
 
-*(Note multiple regression was not performed due to multicolinearity of predictor variables (i.e those strongly correlated with UVs)*
+**Notes**
+- regression was only performed on 2021-2022 Data in this circumstance 
+    - due to data sample size 
+- multiple regression was not performed due to multicolinearity of predictor variables (i.e those strongly correlated with UVs)
 
 ## Unique Completers 
 ![Screen Shot 2022-05-17 at 5 58 32 PM](https://user-images.githubusercontent.com/79600550/168916960-c8950414-8164-4b14-96df-64b21a7e5aa5.png)
@@ -96,7 +99,7 @@ The purpose of performing regression analyses on the following metrics was to pr
 
 ![Screen Shot 2022-05-23 at 7 26 52 PM](https://user-images.githubusercontent.com/79600550/169920194-98839ee2-59f4-4759-9d43-ef3c62badedb.png)
 
-### Removing the extreme outlier 
+### Removing Outliers 
 - Extreme outlier appears to be holding substantial weight (x > 150k)
     - interested to see differences in correlation strength/model performance when outlier is removed 
     - (see lines 185-220 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for reference). 
@@ -107,7 +110,8 @@ The purpose of performing regression analyses on the following metrics was to pr
 - 3 parameter MM Model 
     - best performing model again
     - correlation of predicted y to actual y = 0.74
-    - regression line remains relatively the same after outlier removal - important to note outlier robustness of MM model 
+    - Ony slight changes in regression line after outlier removal
+        - great indication of robust nature of MM equation in dealing with outliers 
     - aymptotic relationship still apparent with removal of major outlier **
 
 ![Screen Shot 2022-05-23 at 9 30 35 PM](https://user-images.githubusercontent.com/79600550/169930470-51922488-ef1c-4271-9c5c-7eb69fdca275.png)
