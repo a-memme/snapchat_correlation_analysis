@@ -64,7 +64,7 @@ and [Staitics Laerd](https://statistics.laerd.com/statistical-guides/pearson-cor
 
 ## Data by Individual Snapchat Channel 
 ### Screenshots 
-- When filtering data for individual snapchat channel, screenshots saw significant linear correlations with viewership within each channel except for one (see figure below)
+- When filtering data for individual snapchat channel, screenshots saw significant linear correlations with viewership within each channel except for channel 2d (see figure below)
 - This provides interesting insight into the specific profile of each snapchat channel and how they relate to the influence of screenshot taking.
 
 <img width="864" alt="Screen Shot 2022-05-23 at 7 59 46 PM" src="https://user-images.githubusercontent.com/79600550/169925245-ba912abb-05d9-415f-bbea-423e2f0a2274.png">
