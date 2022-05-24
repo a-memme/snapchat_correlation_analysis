@@ -11,7 +11,8 @@
 
 ## Approach 
 - Data
-    - 4 data samples (based on real-world data) are used and filtered based on the following:
+    - real-world dataset, personally used in a professional setting and slightly altered/configured to be represented in a github project  
+    - 4 data samples are used and filtered based on the following:
         - **2021-2022 Data (see [data/yearly_updated.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/yearly_updated.csv)):** inaugural episode-level data from Sept 2021-Mar 2022
         - **2022 Data (see [data/2022_updated.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/2022_updated.csv):** Inaugural episode-level data from Jan 2022-Mar 2022
         - **Bangers 21-22 (see [data/in_bangers.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/in_bangers.csv):** data pertaining to episodes individually designated as "bangers" based on pre-determined critera of stakeholders
@@ -23,16 +24,18 @@
 
 ## Results
 
-### Correlations (see [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) for analysis)
+### Correlations (see [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) for context)
 - The strongest metrics correlated to viewership (Unique Viewers) are the following:
     - Unique Topsnap Views and Unique Completers (0.93-0.98)
     - Subscribers added (0.89-0.92)
+        - strongest correlated metric to viewership out of engagement metrics (i.e subcribers, screenshots and shares)
+        - most consistently correlated metric to viewership out of the engagement metrics.  
 - Shares 
     - are only strongly correlated with viewership when assessing episodes overall, and not for banger episodes 
 - Screenshots 
     - only strongly correlation with viewership when isolating for individual channels
 
-### Relationships (See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) for analysis)
+### Relationships (See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) for context)
 - Unique Topsnap Views & Unique Completers 
     - very close linear relationship to viewership (R2 = ~0.90)
     - could potentially be perceived as an obvious finding as both metrics are by-nature viewership metrics in and of themselves. 
@@ -40,32 +43,35 @@
 - Subcribers added 
     - moderate linear relationship with viewership (R2 = ~0.80) - best modelled by a RLM to account for outliers.
 - Shares 
-    - asymptotic relationship with viewership, best modelled by the Michaleis-Menten equation, or GAM (0.78-0.79 correlation predicted y>actual y)
+    - asymptotic relationship with viewership, best modelled by the Michaleis-Menten equation, or GAM (0.78-0.79 correlation predicted y to actual y)
         - ** this relationship is only valid when assessing overall data, and not banger episodes specifically 
     - indicates a threshold value where the increase of shares becomes less relevant to the increase of unique viewers 
         - i.e as the number of shares increase, the rate of UV increase slows. 
+    - outlier influence (see Outlier influence section in [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis)
+        - the asymptotic relationship between shares and viewership is strongly held up by a single outlier 
+        - when removing this outlier, the relationship is still apparent, however substantially weaker 
+            - not as concerning in this context as it my normally be as outlier episodes represent some of the data that we're most interested in analyzing within the social media context
+            - further analyses will look to perform the same regression at a future date when even more data is available.     
 - Screenshots 
     - linear relationship with viewership when looking at data individual to each unique channel 
         - apparent under all channels except for 1 (channel_2d)
     - the strength and rate of this relationship is unique to each channel, indicating a potential profile pertaining to each channel where screenshots hold different influence over its relationship with viewership. 
 
 ### Bangers 
-- The most strongly correlated metrics with viewership become even more strongly correlated when isolating for banger episodes 
+- The most strongly correlated metrics with viewership become even more strongly correlated when isolating for banger episodes (see table under All Datasets section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis)
 - No significant linear or nonlinear correlations with shares
-- Strong correlations with screenshots only exist when data is filtered by individual snapchat channel. 
+- Strong correlations with screenshots only exist when data is filtered by individual snapchat channel. (See table under Data by Individual Snapchat Channel section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis)
 - Although the strength of correlations/relationships change when analyzing across different datasets, the shape of these relationships remain constant 
     - i.e shares to viewership is always a nonlinear (asymptotic) relationship when looking at all-channel data across different time-frames or banger/overall data, regardless of the correlation strength or performance of the regression model.
 
 ## Summary & Insights
-
-
-
-
-
-- Subscribers added 
-    - strongest correlated metric to viewership out of the 3 main engagement metrics (i.e subscribers, screenshots and shares).
-    - also is the most consistently correlated engagement metric over all datasets (banger and overall datasets across different timelines - See table under All Datasets tab in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis)
-
-
+- Only metrics that are consistently strongly correlated with viewership are:
+    - unique topsnap views 
+    - unique completers 
+    - subscribers added 
+- Correlation strength and the slope of the linear relationship between screenshots and viewership are channel-dependent 
+- Shares is the only metric that holds a nonlinear relationship with viewership, and is only statistically significant/strongly correlated with viewership in overall data.
+    - these correlations/relationships are not as strongly apparent in banger data, however given their visual representations, can simply be due to a lack of data points rather than lack of relationship. 
+- The shape of metric to viewership relationships remain contsant across timeframes, and banger vs. overall data regardless of correlation strength or regression fit.
 
   
