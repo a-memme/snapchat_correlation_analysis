@@ -1,4 +1,4 @@
-# Correlation Analysis - Snapchat Video Metrics 
+# Snapchat Video Metrics Analysis
 
 ## Purpose 
 - Evaluate Snapchat viewership data to uncover insights regarding:
