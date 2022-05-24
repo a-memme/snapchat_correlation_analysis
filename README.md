@@ -6,7 +6,7 @@
         - how do the following KPIs relate to unique viewership?
         - if there is significant relation between variables, what is the shape of this relationship? (i.e linear, polynomial, non-linear, etc.)
         - does the nature of these relationships (strength of correlation, direction and shape of relationship) change under different time frames?
-    -  Uniquess of "banger" episodes 
+    -  Uniqueness of "banger" episodes 
         - are there specific sets of metrics that share stronger/weaker relationships when filtering for outlier (banger) episodes?
 
 ## Approach 
