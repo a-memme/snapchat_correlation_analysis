@@ -5,7 +5,7 @@
     -  Metric correlations across different dimensions (timeframes, individual snapchat channels, "banger" vs. regular episodes)
         - how do the following KPIs relate to unique viewership?
         - if there is significant relation between variables, what is the shape of this relationship? (i.e linear, polynomial, non-linear, etc.)
-        - does these relationships (strength of correlation/direction and shape of relationship) change under different time frames?
+        - does the nature of these relationships (strength of correlation, direction and shape of relationship) change under different time frames?
     -  Uniquess of "banger" episodes 
         - are there specific sets of metrics that share stronger/weaker relationships when filtering for outlier (banger) episodes?
 
@@ -21,7 +21,50 @@
 - [Regression](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis)
     - several regression models are assesed amongst selected metrics with high-correlation coefficients to further assess relationship strength and predictive power between/amongst variables(>0.70 pearson correlation coefficient/spearman in cases on non-linear relationships).
 
-## Results 
+## Results
+
+### Correlations (see [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) for analysis)
+- The strongest metrics correlated to viewership (Unique Viewers) are the following:
+    - Unique Topsnap Views and Unique Completers (0.93-0.98)
+    - Subscribers added (0.89-0.92)
+- Shares 
+    - are only strongly correlated with viewership when assessing episodes overall, and not for banger episodes 
+- Screenshots 
+    - only strongly correlation with viewership when isolating for individual channels
+
+### Relationships (See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) for analysis)
+- Unique Topsnap Views & Unique Completers 
+    - very close linear relationship to viewership (R2 = ~0.90)
+    - could potentially be perceived as an obvious finding as both metrics are by-nature viewership metrics in and of themselves. 
+    - understanding that particular quality of viewership metrics (number of unique completers of content, and number of unique viewers per each individual snap in any particular set of content) move closely in tandem with the number of unique viewers. 
+- Subcribers added 
+    - moderate linear relationship with viewership (R2 = ~0.80) - best modelled by a RLM to account for outliers.
+- Shares 
+    - asymptotic relationship with viewership, best modelled by the Michaleis-Menten equation, or GAM (0.78-0.79 correlation predicted y>actual y)
+        - ** this relationship is only valid when assessing overall data, and not banger episodes specifically 
+    - indicates a threshold value where the increase of shares becomes less relevant to the increase of unique viewers 
+        - i.e as the number of shares increase, the rate of UV increase slows. 
+- Screenshots 
+    - linear relationship with viewership when looking at data individual to each unique channel 
+        - apparent under all channels except for 1 (channel_2d)
+    - the strength and rate of this relationship is unique to each channel, indicating a potential profile pertaining to each channel where screenshots hold different influence over its relationship with viewership. 
+
+### Bangers 
+- The most strongly correlated metrics with viewership become even more strongly correlated when isolating for banger episodes 
+- No significant linear or nonlinear correlations with shares
+- Strong correlations with screenshots only exist when data is filtered by individual snapchat channel. 
+- Although the strength of correlations/relationships change when analyzing across different datasets, the shape of these relationships remain constant 
+    - i.e shares to viewership is always a nonlinear (asymptotic) relationship when looking at all-channel data across different time-frames or banger/overall data, regardless of the correlation strength or performance of the regression model.
+
+## Summary & Insights
+
+
+
+
+
+- Subscribers added 
+    - strongest correlated metric to viewership out of the 3 main engagement metrics (i.e subscribers, screenshots and shares).
+    - also is the most consistently correlated engagement metric over all datasets (banger and overall datasets across different timelines - See table under All Datasets tab in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis)
 
 
 
