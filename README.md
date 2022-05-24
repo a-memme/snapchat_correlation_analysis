@@ -24,7 +24,8 @@
 
 ## Results
 
-### Correlations (see [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) for context)
+### Correlations 
+*(see [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) for context)*
 - The strongest metrics correlated to viewership (Unique Viewers) are the following:
     - Unique Topsnap Views and Unique Completers (0.93-0.98)
     - Subscribers added (0.89-0.92)
@@ -35,7 +36,8 @@
 - Screenshots 
     - only strongly correlation with viewership when isolating for individual channels
 
-### Relationships (See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) for context)
+### Relationships 
+*(See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) for context)*
 - Unique Topsnap Views & Unique Completers 
     - very close linear relationship to viewership (R2 = ~0.90)
     - could potentially be perceived as an obvious finding as both metrics are by-nature viewership metrics in and of themselves. 
