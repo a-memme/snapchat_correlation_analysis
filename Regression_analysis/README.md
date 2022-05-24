@@ -2,8 +2,7 @@
 The purpose of performing regression analyses on the following metrics was to provide supporting insight on their corresponding correlation coefficients, and to investigate whether sufficient linear/non-linear models could be built to accurately depict these relationships. 
 
 **Notes**
-- regression was only performed on 2021-2022 Data in this circumstance 
-    - due to data sample size 
+- regression analyses is only displayed on those assessing 2021-2022 Data due to sample size and the repetitive nature of the process. 
 - multiple regression was not performed due to multicolinearity of predictor variables (i.e those strongly correlated with UVs)
 
 ## Unique Completers 
@@ -100,7 +99,7 @@ The purpose of performing regression analyses on the following metrics was to pr
 ![Screen Shot 2022-05-23 at 7 26 52 PM](https://user-images.githubusercontent.com/79600550/169920194-98839ee2-59f4-4759-9d43-ef3c62badedb.png)
 
 ### Removing Outliers 
-- Extreme outlier appears to be holding substantial weight (x > 150k)
+- An extreme outlier looks as though it could be holding substantial weight (x > 150k)
     - interested to see differences in correlation strength/model performance when outlier is removed 
     - (see lines 185-220 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for reference). 
 
