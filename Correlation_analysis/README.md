@@ -62,8 +62,8 @@ and [Staitics Laerd](https://statistics.laerd.com/statistical-guides/pearson-cor
         - strong Spearman correlations between these two metrics but plotting the data revealed no apparent non-linear relationship 
         - indication of linear relationships on a individual channel-level 
 
-# Data by Individual Snapchat Channel 
-## Screenshots 
+## Data by Individual Snapchat Channel 
+### Screenshots 
 - When filtering data for individual snapchat channel, screenshots saw significant linear correlations with viewership within each channel except for one (see figure below)
 - This provides interesting insight into the specific profile of each snapchat channel and how they relate to the influence of screenshot taking.
 
