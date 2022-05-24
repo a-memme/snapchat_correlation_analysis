@@ -80,6 +80,6 @@
 
 ## Future Analyses 
 - Regression analyses with a greater wealth of data 
-    - the nonlinear relationship with shares and viweership is only statistically satisifed when applied to overall data (not to bangers) - based on these different visual representations, there is a possibility that this could simply be due to a lack of data 
-    - further analyses will look to perform the same forms of regression/correlation matrices at a future date when more data is available.  
+    - the nonlinear relationship with shares and viweership is only statistically satisifed when applied to overall data (not to bangers) - based on the visual representations of these datasets, one may be able to find more adequate models with a larger dataset. 
+    - Thus, future inferences will look to perform  the same analyses at a future date when more data is available. 
   
