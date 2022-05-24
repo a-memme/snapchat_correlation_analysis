@@ -11,7 +11,7 @@
 
 ## Approach 
 - Data
-    - real-world dataset, personally used in a professional setting and slightly altered/configured to be represented in a github project  
+    - real-world dataset, previously used in a professional setting and altered to translate to a github context 
     - 4 data samples are used and filtered based on the following:
         - **2021-2022 Data (see [data/yearly_updated.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/yearly_updated.csv)):** inaugural episode-level data from Sept 2021-Mar 2022
         - **2022 Data (see [data/2022_updated.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/2022_updated.csv):** Inaugural episode-level data from Jan 2022-Mar 2022
