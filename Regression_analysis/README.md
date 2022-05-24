@@ -96,5 +96,21 @@ The purpose of performing regression analyses on the following metrics was to pr
 
 ![Screen Shot 2022-05-23 at 7 26 52 PM](https://user-images.githubusercontent.com/79600550/169920194-98839ee2-59f4-4759-9d43-ef3c62badedb.png)
 
+### Removing the extreme outlier 
+- Extreme outlier appears to be holding substantial weight (x > 150k)
+    - interested to see differences in correlation strength/model performance when outlier is removed 
+    - (see lines 185-220 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for reference). 
+
+![Screen Shot 2022-05-23 at 9 12 19 PM](https://user-images.githubusercontent.com/79600550/169929953-85097a51-2970-47e3-b447-338fcba7141d.png)
+
+**Summary**
+- 3 parameter MM Model 
+    - best performing model again
+    - correlation of predicted y to actual y = 0.74
+    - regression line remains relatively the same after outlier removal - important to note outlier robustness of MM model 
+    - aymptotic relationship still apparent with removal of major outlier **
+
+![Screen Shot 2022-05-23 at 9 30 35 PM](https://user-images.githubusercontent.com/79600550/169930470-51922488-ef1c-4271-9c5c-7eb69fdca275.png)
+
 ## References
 Spiess, Andrej-Nikolai, Natalie Neumeyer. An evaluation of R2 as an inadequate measure for nonlinear models in pharmacological and biochemical research: a Monte Carlo approach. BMC Pharmacology. 2010; 10: 6.
