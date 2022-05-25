@@ -1,17 +1,22 @@
 # Snapchat Video Metrics Analysis
 
+## Introduction 
+When assessing data within the social media landscape, it is extremely important to understand the nuances of the platform you are dealing with. Snapchat, in particular, has its own particular set of nuaces where some of the typical metrics assumed in social media (clicks, click-through-rate (CTR) , reach, impressions per session (IPS), etc.) are either not readily present, or are represented by other catgeorizations or a combination of different metrics. These differences are partly due to the natural changes one may find platform to platform, but more specifically, are due to the static nature in which videos are viewed, distributed, and maintained within the platform. 
+
+For the purpose of this project, the context assumed is that Snapchat is a novel major revenue stream, where further insight is required to understand how the metrics available through the platform are related to viewership (in this case, the KPI "unique viewers"). Furthermore, this question becomes increasingly more interesting when considering whether any of these metric relationships differ in strength or nature when considering the overly successful episodes (i.e "banger" episodes).
+
 ## Purpose 
-- Evaluate Snapchat viewership data to uncover insights regarding:
-    -  Metric correlations across different dimensions (timeframes, individual snapchat channels, "banger" vs. regular episodes)
-        - how do the following KPIs relate to unique viewership?
-        - if there is significant relation between variables, what is the shape of this relationship? (i.e linear, polynomial, non-linear, etc.)
-        - does the nature of these relationships (strength of correlation, direction and shape of relationship) change under different time frames?
-    -  Uniqueness of "banger" episodes 
-        - are there specific sets of metrics that share stronger/weaker relationships when filtering for outlier (banger) episodes?
+To evaluate Snapchat Video performance data to uncover insights regarding:
+-  Metric correlations to viewership across different dimensions (timeframes, individual snapchat channels, "banger" vs. regular episodes)
+    -  How do the following KPIs relate to unique viewership?
+        - If there is significant relation between variables, what is the shape of this relationship? (i.e linear, polynomial, non-linear, etc.)
+        - Does the nature of these relationships change under different time frames? (i.e strength of correlation, direction or shape of relationship)
+-  Uniqueness of "banger" episodes 
+    -  Are there changes in these metric relationships when filtering for outlier (banger) episodes?
 
 ## Approach 
 - Data
-    - real-world dataset, previously used in a professional setting and altered to translate to a github context 
+    - real-world dataset, previously used in a professional setting and altered to appropriately translate to github.
     - 4 data samples are used and filtered based on the following:
         - **2021-2022 Data (see [data/yearly_updated.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/yearly_updated.csv)):** inaugural episode-level data from Sept 2021-Mar 2022
         - **2022 Data (see [data/2022_updated.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/2022_updated.csv):** Inaugural episode-level data from Jan 2022-Mar 2022
