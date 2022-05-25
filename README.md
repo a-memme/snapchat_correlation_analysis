@@ -42,9 +42,9 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
         - strongest correlated metric to viewership out of engagement metrics (i.e subcribers, screenshots and shares)
         - most consistently correlated metric to viewership out of the engagement metrics.  
 - Shares 
-    - are only strongly correlated with viewership when assessing episodes overall, and not for banger episodes 
+    - Only strongly correlated with viewership when assessing episodes overall, and not for banger episodes 
 - Screenshots 
-    - only strongly correlation with viewership when isolating for individual channels
+    - Only strongly correlation with viewership when isolating for individual channels
 
 ### Relationships 
 *(See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) folder)*
