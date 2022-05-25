@@ -3,7 +3,7 @@
 ## Introduction 
 When assessing data within the social media landscape, it is extremely important to understand the nuances of the platform you are dealing with. Snapchat, in particular, has its own particular set of nuaces where some of the typical metrics assumed in social media (clicks, click-through-rate (CTR) , reach, impressions per session (IPS), etc.) are either not readily present, or are represented by other catgeorizations or a combination of different metrics. These differences are partly due to the natural changes one may find platform to platform, but more specifically, are due to the static nature in which videos are viewed, distributed, and maintained within the platform. 
 
-For the purpose of this project, the context assumed is that Snapchat is a novel major revenue stream, where further insight is required to understand how the metrics available through the platform are related to viewership (in this case, the KPI "unique viewers"). Furthermore, this question becomes increasingly more interesting when considering whether any of these metric relationships differ in strength or nature when considering the overly successful episodes (i.e "banger" episodes).
+For the purpose of this project, the context assumed is that Snapchat is a novel major revenue stream, where further insight is required to understand how the metrics available through the platform are related to viewership (in this case, the KPI "unique viewers"). Furthermore, this question becomes increasingly more interesting when considering whether any of these metric relationships differ in strength or nature when isolating for the overly successful episodes (i.e "banger" episodes).
 
 ## Purpose 
 To evaluate Snapchat Video performance data to uncover insights regarding:
