@@ -24,7 +24,7 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
     - **Bangers 2022 (see [data/bangers_2022.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/bangers_2022.csv):** "" filter from Jan 2022-March2022 
 
 ### Correlation Analysis
-*(See [Correlation_analysis ](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) folder for method)*
+*(See [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) folder for method)*
 - Pearson/Spearman correlation values are compared across different time frames/data samples to assess metric to viewership relations.
 
 ### Regression Analysis
