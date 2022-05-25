@@ -49,26 +49,25 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
 ### Relationships 
 *(See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) folder)*
 - Unique Topsnap Views & Unique Completers 
-    - very close linear relationship to viewership (R2 = ~0.90)
-    - could potentially be perceived as an obvious finding as both metrics are by-nature viewership metrics. 
-    - provides insight toward the quality of viewership metrics (number of unique completers of content, and number of unique viewers per each individual snap in any particular set of content) and how closely they move in tandem with unique viewership
+    - Very close linear relationship to viewership (R2 = ~0.90)
+    - Potentially perceived as an obvious finding as both metrics are by-nature viewership metrics. 
 - Subcribers added 
-    - moderate linear relationship with viewership (R2 = ~0.80) - best modelled by a RLM to account for outliers.
+    - Moderate linear relationship with viewership (R2 = ~0.80) - best modelled by a RLM to account for outliers.
 - Shares 
-    - asymptotic relationship with viewership, best modelled by the Michaleis-Menten equation, or GAM (0.78-0.79 correlation predicted y to actual y)
+    - Asymptotic relationship with viewership, best modelled by the Michaleis-Menten equation, or GAM (0.78-0.79 correlation predicted y to actual y)
         - ** this relationship is only valid when assessing overall data, and not banger episodes specifically 
-    - indicates a threshold value where the increase of shares becomes less relevant to the increase of unique viewers 
+    - Indicates a threshold value where the increase of shares becomes less relevant to the increase of unique viewers 
         - i.e as the number of shares increase, the rate of UV increase slows. 
-    - outlier influence 
+    - Outlier influence 
         - asymptotic relationship is still quite apparent even with the removal of substantial outliers. 
         - *(see Outlier influence section in [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) folder)* 
 - Screenshots 
-    - linear relationship with viewership when looking at data individual to each unique channel 
+    - Linear relationship with viewership when looking at data individual to each unique channel 
         - apparent under all channels except for 1 (channel_2d)
-    - the strength and rate of this relationship is unique to each channel, indicating a potential profile pertaining to each channel where screenshots interact with viewership at different rates. 
+    - The strength and rate of this relationship is unique to each channel, indicating a potential profile pertaining to each channel where screenshots interact with viewership at different rates. 
 
 ### Bangers 
-- The most strongly correlated metrics with viewership become even more strongly correlated when isolating for banger episodes 
+- Metrics most strongly correlated with viewership become even more strongly correlated when isolating for banger episodes 
         -  *(See table under All Datasets section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis))*
 - No significant linear or nonlinear correlations with shares
 - Strong correlations with screenshots only exist when data is filtered by individual snapchat channel. 
@@ -78,15 +77,14 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
 
 ## Summary & Insights
 - Only metrics that are **consistently** strongly correlated with viewership are:
-    - unique topsnap views 
-    - unique completers 
-    - subscribers added 
+    - Unique topsnap views 
+    - Unique completers 
+    - Subscribers added 
 - All strongly correlated metrics have a positive linear relationship with viewership with the exception of shares
-    - shares is the only metric with a nonlinear (asymptotic) relationship with viewership 
+    - Shares is the only metric with a nonlinear (asymptotic) relationship with viewership 
 - Correlation strength and the slope of the linear relationship between screenshots and viewership are channel-dependent 
 - The shape of metric to viewership relationships remain consistent across timeframes and datasets, regardless of correlation strength or regression performance.
 
 ## Future Analyses 
 - Regression analyses with a greater wealth of data 
-    - the nonlinear relationship with shares and viweership is only statistically satisifed when applied to overall data (not to bangers) - based on the visual representations of these datasets, one may be able to find more adequate models with use of a larger dataset. 
-    - Thus, future inferences will look to perform  the same analyses at a future date when more data is available. 
+    - The nonlinear relationship with shares and viewership is only statistically satisifed when applied to overall data (not to bangers) - one may be able to find more adequate models with use of a larger dataset. Thus, future inferences will look to perform  the same analyses at a future date when more data is available. 
