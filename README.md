@@ -24,18 +24,18 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
     - **Bangers 2022 (see [data/bangers_2022.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/bangers_2022.csv):** "" filter from Jan 2022-March2022 
 
 ### Correlation Analysis
-*(See [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) for method)*
+*(See [Correlation_analysis folder](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) folder for method)*
 - Pearson/Spearman correlation values are compared across different time frames/data samples to assess metric to viewership relations.
 
 ### Regression Analysis
-*(See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) for method)*
+*(See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) folder for method)*
 - A collection of different linear & nonlinear regression models are fit to the data to determine the shape and predictability of metric to viewership relationships. 
 - Only metrics with strong correlations to viewership (i.e correlation coefficient > 0.70) are selected for regression.
 
 ## Results
 
 ### Correlations 
-*(see [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) for context)*
+*(see [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) folder)*
 - Metrics with strongest correlations to viewership:
     - Unique Topsnap Views and Unique Completers (0.93-0.98)
     - Subscribers added (0.89-0.92)
@@ -47,7 +47,7 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
     - only strongly correlation with viewership when isolating for individual channels
 
 ### Relationships 
-*(See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) for context)*
+*(See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) folder)*
 - Unique Topsnap Views & Unique Completers 
     - very close linear relationship to viewership (R2 = ~0.90)
     - could potentially be perceived as an obvious finding as both metrics are by-nature viewership metrics. 
@@ -59,8 +59,9 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
         - ** this relationship is only valid when assessing overall data, and not banger episodes specifically 
     - indicates a threshold value where the increase of shares becomes less relevant to the increase of unique viewers 
         - i.e as the number of shares increase, the rate of UV increase slows. 
-    - outlier influence (see Outlier influence section in [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis)
-        - asymptotic relationship is still quite apparent even with the removal of substantial outliers.   
+    - outlier influence 
+        - asymptotic relationship is still quite apparent even with the removal of substantial outliers. 
+        - *(see Outlier influence section in [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) folder)* 
 - Screenshots 
     - linear relationship with viewership when looking at data individual to each unique channel 
         - apparent under all channels except for 1 (channel_2d)
@@ -68,10 +69,10 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
 
 ### Bangers 
 - The most strongly correlated metrics with viewership become even more strongly correlated when isolating for banger episodes 
-    -  *(see table under All Datasets section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis))*
+        -  *(See table under All Datasets section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis))*
 - No significant linear or nonlinear correlations with shares
 - Strong correlations with screenshots only exist when data is filtered by individual snapchat channel. 
-    - *(See table under Data by Individual Snapchat Channel section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis))*
+        - *(See table under Data by Individual Snapchat Channel section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis))*
 - Although the strength of correlations/relationships change when analyzing across different datasets, the shape of these relationships remain constant 
     - i.e shares to viewership is always a nonlinear (asymptotic) relationship when looking at all-channel data across different time-frames or banger/overall data, regardless of the correlation strength or performance of the regression model.
 
