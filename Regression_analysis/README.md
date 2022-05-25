@@ -76,25 +76,25 @@ The purpose of performing regression analyses on the following metrics was to pr
         - high values for both well-performing and extremely poor performing models 
         - R2 value not always increasing for better models 
         - Model selection will only lead to the correct decision (the best model) approxiamtely 28-43% of the time 
-- Given the above information, other model cues are relied on to determine adequacy: in our circumstance, the correlation of actual y to predicted y, and visual representation.
+- Given the above information, other model cues are relied on to determine adequacy 
+    - In our circumstance, we will rely on the correlation of actual y to predicted y, and visual representation of the regression line.
     
 **Summary**
-- Best performing GAM - k=5
-    - better visual representation of the asymptote (vs. polynomials) - see image below
-    - correlation of y to predicted y = 0.78
+- Best performing GAM: k=5
+    - Better visual representation of the asymptote vs. polynomials - see image below
+    - Correlation of predicted y to actual y = 0.78
 
 ![Screen Shot 2022-05-23 at 7 17 12 PM](https://user-images.githubusercontent.com/79600550/169919388-acc2322b-7f15-41eb-958d-732b73ea3b42.png)
 
 ### Michaelis-Menten Model 
 *(See lines 162-181 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for reference)*
-- equation for rectangular hyperbolas/saturation curve 
-- originally developed to model the relation between substrate concetration and reaction rate in enzyme activity 
+- Equation for rectangular hyperbolas/saturation curve 
+- Originally developed to model the relation between substrate concetration and reaction rate in enzyme activity 
 
 **Summary - Best Model Overall**
 - 3 parameter MM Model 
-- best visual representation of the asymptote overall - see image below
-    -  vs. polynomials and GAM's
-- highest correation of y to predicted y = 0.79
+- Best visual representation of the asymptote overall in comparison to GAM's and polynomials - see image below
+- Highest correation of predicted y  to actual y = 0.79
 
 ![Screen Shot 2022-05-23 at 7 26 52 PM](https://user-images.githubusercontent.com/79600550/169920194-98839ee2-59f4-4759-9d43-ef3c62badedb.png)
 
@@ -111,7 +111,7 @@ The purpose of performing regression analyses on the following metrics was to pr
     - correlation of predicted y to actual y = 0.74
     - Ony slight changes in regression line after outlier removal
         - great indication of robust nature of MM equation in dealing with outliers 
-    - aymptotic relationship still apparent with removal of major outlier **
+    - aymptotic relationship still maintaining validity with removal of major outlier **
 
 ![Screen Shot 2022-05-23 at 9 30 35 PM](https://user-images.githubusercontent.com/79600550/169930470-51922488-ef1c-4271-9c5c-7eb69fdca275.png)
 
