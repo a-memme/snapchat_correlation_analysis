@@ -16,7 +16,7 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
 
 ## Approach 
 ### Data
-- real-world dataset, previously used in a professional setting and altered to appropriately translate to github.
+- Real-world dataset, previously used in a professional setting and altered to appropriately translate to github.
 - 4 data samples are used and filtered based on the following:
     - **2021-2022 Data (see [data/yearly_updated.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/yearly_updated.csv)):** inaugural episode-level data from Sept 2021-Mar 2022
     - **2022 Data (see [data/2022_updated.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/2022_updated.csv):** Inaugural episode-level data from Jan 2022-Mar 2022
