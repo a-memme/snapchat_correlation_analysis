@@ -23,6 +23,24 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
     - **Bangers 21-22 (see [data/in_bangers.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/in_bangers.csv):** data pertaining to episodes individually designated as "bangers" based on pre-determined critera of stakeholders
     - **Bangers 2022 (see [data/bangers_2022.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/bangers_2022.csv):** "" filter from Jan 2022-March2022 
 
+### Glossary 
+- **Channel**
+    - Referring to a specific Snapchat channel where episodes are released according to the Channel's aim/purpose
+- **Episode/Story** 
+    - A single video (story) posted on a Snapchat channel that is divided into individual "snaps"
+- **Snap**
+    - A short video clip which makes up a part of an entire video episode/story
+- **Engagement metrics** 
+    - Referring to the subscribers added, screenshots, and shares metrics 
+    - Each metric represents a number attributed to a specific episode at a specific time (for example: number of shares on an episode)
+- **Viewership** 
+    - Here, relating specifically to the metric "Unique Viewers"
+    - Unique viewers = the number of unique snapchat users who interacted with a given episode or story
+- **Unique Completers** 
+    -  Number of unique Snapchat users who meet a certain retention threshold on a given episode or story.
+- **Unique Topsnap Views** 
+    - Number of unique Snapchat users who interact with/view a given snap within an episode or story.
+
 ### Correlation Analysis
 *(See [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) folder for more)*
 - Pearson/Spearman correlation values are computed and compared across different time frames/data samples to assess metric to viewership relations.
@@ -31,24 +49,6 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
 *(See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) folder for more)*
 - A collection of different linear & nonlinear regression models are fit to the data to determine the shape and predictability of metric to viewership relationships. 
 - Only metrics with strong correlations to viewership are selected for regression (i.e correlation coefficient > 0.70).
-
-### Glossary 
-- Channel 
-    - Referring to a specific Snapchat channel where episodes are released according to the Channel's aim/purpose
-- Episode/Story 
-    - A single video (story) posted on a Snapchat channel that is divided into individual "snaps"
-- Snap
-    - A short video clip which makes up a part of an entire video episode/story
-- Engagement metrics 
-    - Referring to the subscribers added, screenshots, and shares metrics 
-    - Each metric represents a number attributed to a specific episode at a specific time (for example: number of shares on an episode)
-- Viewership 
-    - Here, relating specifically to the metric "Unique Viewers"
-    - Unique viewers = the number of unique snapchat users who interacted with a given episode or story
-- Unique Completers 
-    -  Number of unique Snapchat users who meet a certain retention threshold on a given episode or story.
-- Unique Topsnap Views 
-    - Number of unique Snapchat users who interact with/view a given snap within an episode or story.
 
 
 ## Results
