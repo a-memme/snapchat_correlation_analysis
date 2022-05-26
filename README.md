@@ -29,7 +29,7 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
 - **Episode/Story** 
     - A single video (story) posted on a Snapchat channel that is divided into individual "snaps"
 - **Snap**
-    - A short video clip which makes up a part of an entire video episode/story
+    - A short video clip which makes up a piece of an entire video episode/story
 - **Engagement metrics** 
     - Referring to the subscribers added, screenshots, and shares metrics 
     - Each metric represents a number attributed to a specific episode at a specific time (for example: number of shares on an episode)
