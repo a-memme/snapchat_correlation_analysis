@@ -1,16 +1,16 @@
 # Snapchat Video Metrics Analysis
 
 ## Introduction 
-When assessing data within the social media landscape, it is extremely important to understand the nuances of the platform you are dealing with. Snapchat, in particular, has its own particular set of nuaces where some of the typical metrics assumed in social media (clicks, click-through-rate (CTR) , reach, impressions per session (IPS), etc.) are either not readily present, or are represented by other catgeorizations or a combination of different metrics. These differences are partly due to the natural changes one may find platform to platform, but more specifically, are due to the static nature in which videos are viewed, distributed, and maintained within the platform. 
+When assessing data within the social media landscape, it is extremely important to understand the nuances of the platform you are dealing with. Snapchat, in particular, is extremely nuanced in the sense that typical metrics one would assume to see within the social media space (i.e clicks, click-through-rate (CTR) , reach, impressions per session (IPS), etc.) are either not readily present, or are represented by other catgeorizations/combination of different metrics. These differences are partly due to the natural changes in data collection one may find from platform to platform, but more specifically, are due to the static nature in which videos are viewed, distributed, and maintained across the platform. 
 
-For the purpose of this project, the context assumed is that Snapchat is a novel major revenue stream, where further insight is required to understand how the metrics available through the platform are related to viewership (in this case, the KPI "unique viewers"). Furthermore, this question becomes increasingly more interesting when considering whether any of these metric relationships differ in strength or nature when isolating for the overly successful episodes (i.e "banger" episodes).
+For the purpose of this project, the context being assumed is Snapchat as a novel revenue stream and platform for a content creator/distributor, where further insight is required to understand how the metrics available through the platform are related to viewership (in this case, the KPI "unique viewers"). Furthermore, this question becomes increasingly more interesting when considering whether any of these metric relationships differ in strength or nature when isolating for the overly successful episodes (i.e "banger" episodes).
 
 ## Purpose 
 To evaluate Snapchat Video performance data to uncover insights regarding:
 -  Metric correlations to viewership across different dimensions (timeframes, individual snapchat channels, "banger" vs. regular episodes)
     -  How do the following KPIs relate to unique viewership?
         - If there is significant relation between variables, what is the shape of this relationship? (i.e linear, polynomial, non-linear, etc.)
-        - Does the nature of these relationships change under different time frames? (i.e strength of correlation, direction or shape of relationship)
+        - Does the nature of these relationships change over time? (i.e strength of correlation, direction or shape of relationship)
 -  Uniqueness of "banger" episodes 
     -  Are there changes in these metric relationships when filtering for outlier (banger) episodes?
 
@@ -24,13 +24,32 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
     - **Bangers 2022 (see [data/bangers_2022.csv](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/data/bangers_2022.csv):** "" filter from Jan 2022-March2022 
 
 ### Correlation Analysis
-*(See [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) folder for method)*
-- Pearson/Spearman correlation values are compared across different time frames/data samples to assess metric to viewership relations.
+*(See [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) folder for more)*
+- Pearson/Spearman correlation values are computed and compared across different time frames/data samples to assess metric to viewership relations.
 
 ### Regression Analysis
-*(See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) folder for method)*
+*(See [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) folder for more)*
 - A collection of different linear & nonlinear regression models are fit to the data to determine the shape and predictability of metric to viewership relationships. 
-- Only metrics with strong correlations to viewership (i.e correlation coefficient > 0.70) are selected for regression.
+- Only metrics with strong correlations to viewership are selected for regression (i.e correlation coefficient > 0.70).
+
+### Glossary 
+- Channel 
+    - Referring to a specific Snapchat channel where episodes are released according to the Channel's aim/purpose
+- Episode/Story 
+    - A single video (story) posted on a Snapchat channel that is divided into individual "snaps"
+- Snap
+    - A short video clip which makes up a part of an entire video episode/story
+- Engagement metrics 
+    - Referring to the subscribers added, screenshots, and shares metrics 
+    - Each metric represents a number attributed to a specific episode at a specific time (for example: number of shares on an episode)
+- Viewership 
+    - Here, relating specifically to the metric "Unique Viewers"
+    - Unique viewers = the number of unique snapchat users who interacted with a given episode or story
+- Unique Completers 
+    -  Number of unique Snapchat users who meet a certain retention threshold on a given episode or story.
+- Unique Topsnap Views 
+    - Number of unique Snapchat users who interact with/view a given snap within an episode or story.
+
 
 ## Results
 
@@ -54,16 +73,16 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
 - Subcribers added 
     - Moderate linear relationship with viewership (R2 = ~0.80) - best modelled by a RLM to account for outliers.
 - Shares 
-    - Asymptotic relationship with viewership, best modelled by the Michaleis-Menten equation, or GAM (0.78-0.79 correlation predicted y to actual y)
+    - Asymptotic relationship with viewership, best modelled by the Michaleis-Menten equation or GAM (0.78-0.79 correlation predicted y to actual y)
         - ** this relationship is only valid when assessing overall data, and not banger episodes specifically 
     - Indicates a threshold value where the increase of shares becomes less relevant to the increase of unique viewers 
         - i.e as the number of shares increase, the rate of UV increase slows. 
     - Outlier influence 
-        - asymptotic relationship is still quite apparent even with the removal of substantial outliers. 
-        - *(see Outlier influence section in [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) folder)* 
+        - asymptotic relationship & Michaelis-Menten model is still valid with removal of the most extreme outliers. 
+            - *(See Outlier influence section in [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) folder)* 
 - Screenshots 
-    - Linear relationship with viewership when looking at data individual to each unique channel 
-        - apparent under all channels except for 1 (channel_2d)
+    - Linear relationship with viewership when assessing individual channel data 
+        - strong linear correlations in all individual channels except for 1 (channel_2d)
     - The strength and rate of this relationship is unique to each channel, indicating a potential profile pertaining to each channel where screenshots interact with viewership at different rates. 
 
 ### Bangers 
