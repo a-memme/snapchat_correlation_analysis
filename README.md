@@ -87,8 +87,8 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
 
 ### Bangers 
 - Metrics most strongly correlated with viewership become even more strongly correlated when isolating for banger episodes 
-        -  *(See table under All Datasets section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis))*
-- No significant linear or nonlinear correlations with shares
+       - *(See table under All Datasets section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis))*
+- No significant correlation with Shares 
 - Strong correlations with screenshots only exist when data is filtered by individual snapchat channel. 
         - *(See table under Data by Individual Snapchat Channel section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis))*
 - Although the strength of correlations/relationships change when analyzing across different datasets, the shape of these relationships remain constant 
