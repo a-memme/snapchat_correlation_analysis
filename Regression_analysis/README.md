@@ -15,7 +15,7 @@ The purpose of performing regression analyses on the following metrics is to pro
 - R2 = 0.90
 - Significant intercept value: 6.22e-07
     - Also expected - statistically significant intercepts indicate that there is substantial variability in y when x=0. This is expected as we assume there to be multiple influencers on viewership, in addition to the contextual understanding of how variabe the initial distribution window for social content is.
-- Approximate normal distribution of the residuals (for validity of the model - see Figure below)
+- Approximate normal distribution of the residuals **(for validity of the model - see Figure below)**
 
 ![Screen Shot 2022-05-19 at 10 20 24 PM](https://user-images.githubusercontent.com/79600550/169435780-55340dab-2974-4c67-b366-fd0fabad4d1f.png)
 
@@ -27,7 +27,7 @@ The purpose of performing regression analyses on the following metrics is to pro
 - RLM comparison 
     - In order to control for outlier values, a robust linear model is also fitted to the data and compared to the OLSR model.
         - *(See lines 82-89 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for reference).*
-    - Model provides a slightly more accurate representation when comparing RSE values as well as when visualizing the regression line (See image below)
+    - Model provides a slightly more accurate representation when comparing RSE values as well as when visualizing the regression line **(See image below)**
       -  OLS Regression - RSE = 741072 on 252 degrees of freedom
       -  RLM Regression - RSE = 446400 on 252 degrees of freedom
 
@@ -41,13 +41,13 @@ The purpose of performing regression analyses on the following metrics is to pro
 ### Polynomial Regression 
 - Polynomial models from the 2nd to the 6th degree tried and tested to fit the curved relationship. 
 - Polynomial ^4
-    -  Best visual relationship of the asymptote (see scatterplot highlighted in blue below)
+    -  Best visual relationship of the asymptote **(See scatterplot highlighted in blue below)**
     -  2 out of 4 statistically significant polynomials (first and second)
     -  Statistically significant intercept 
     -  R2 = 0.61
     -  RSE = 1025000 on 249 degrees of freedom
 - Polynomial ^6
-    - Overfit visual representation (see scatterplot highlighted in red below)
+    - Overfit visual representation **(See scatterplot highlighted in red below)**
     - 5 out of 6 statistically significant polynomials (first, second, third, fifth, and sixth)
     - Statistically significant intercept 
     - R2 = 0.64
@@ -84,7 +84,7 @@ The purpose of performing regression analyses on the following metrics is to pro
     
 **Summary**
 - Best performing GAM is k=5
-    - Better visual representation of the asymptote vs. polynomials - see image below
+    - Better visual representation of the asymptote vs. polynomials - **See image below**
     - Correlation of predicted y to actual y = 0.78
 
 ![Screen Shot 2022-05-23 at 7 17 12 PM](https://user-images.githubusercontent.com/79600550/169919388-acc2322b-7f15-41eb-958d-732b73ea3b42.png)
@@ -96,13 +96,13 @@ The purpose of performing regression analyses on the following metrics is to pro
 
 **Summary**
 - Best performing model overall = 3 parameter MM Model 
-- Best visual representation of the asymptote overall in comparison to GAM's and polynomials - see image below
+- Best visual representation of the asymptote overall in comparison to GAM's and polynomials - **See image below**
 - Highest correation of predicted y  to actual y = 0.79
 
 ![Screen Shot 2022-05-23 at 7 26 52 PM](https://user-images.githubusercontent.com/79600550/169920194-98839ee2-59f4-4759-9d43-ef3c62badedb.png)
 
 ### Removing Outliers 
-- Amongst several outliers, there is an extreme outlier that when plotted, looks as though it can be substantially confounding in the model (shares > 150k) - See image directly below
+- Amongst several outliers, there is an extreme outlier that when plotted, looks as though it can be substantially confounding in the model (shares > 150k) - **See image directly below**
     - Look to run same series of regression models and assess once the outlier is removed 
         - *(See lines 185-220 in [snap_correlation_analysis.R](https://github.com/a-memme/snapchat_correlation_analysis/blob/main/snap_correlation_analysis.R) for reference).* 
 
@@ -113,7 +113,7 @@ The purpose of performing regression analyses on the following metrics is to pro
     - Correlation of predicted y to actual y = 0.74
     - Only slight changes in regression line after outlier removal
         - Great indication of robust nature of MM equation in dealing with outliers 
-    - Aymptotic relationship still maintaining validity with removal of major outlier **
+    - Aymptotic relationship still maintaining validity with removal of major outlier ** - **See image below**
 
 ![Screen Shot 2022-05-23 at 9 30 35 PM](https://user-images.githubusercontent.com/79600550/169930470-51922488-ef1c-4271-9c5c-7eb69fdca275.png)
 
