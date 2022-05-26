@@ -86,11 +86,11 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
     - The strength and rate of this relationship is unique to each channel, indicating a potential profile pertaining to each channel where screenshots interact with viewership at different rates. 
 
 ### Bangers 
-- Metrics most strongly correlated with viewership become even more strongly correlated when isolating for banger episodes 
-       - *(See table under All Datasets section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis))*
+- Metrics most strongly correlated with viewership become even more strongly correlated when isolating for banger episodes
+    - *(See table under All Datasets section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis))*
 - No significant correlation with Shares 
 - Strong correlations with screenshots only exist when data is filtered by individual snapchat channel. 
-        - *(See table under Data by Individual Snapchat Channel section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis))*
+    - *(See table under Data by Individual Snapchat Channel section in [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis))*
 - Although the strength of correlations/relationships change when analyzing across different datasets, the shape of these relationships remain constant 
     - i.e shares to viewership is always a nonlinear (asymptotic) relationship when looking at all-channel data across different time-frames or banger/overall data, regardless of the correlation strength or performance of the regression model.
 
@@ -105,5 +105,4 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
 - The shape of metric to viewership relationships remain consistent across timeframes and datasets, regardless of correlation strength or regression performance.
 
 ## Future Analyses 
-- Regression analyses with a greater wealth of data 
-    - The nonlinear relationship with shares and viewership is only statistically satisifed when applied to overall data (not to bangers) - one may be able to find more adequate models with use of a larger dataset. Thus, future inferences will look to perform  the same analyses at a future date when more data is available. 
+The nonlinear relationship with shares and viewership is only statistically satisifed when applied to overall data (not to bangers) - we see this relationship happen specifically when performing regression on these smaller datasets (for obvious reasons). One may be able to find more adequate models with use of a larger dataset. Thus, future inferences will look to perform  the same analyses at a future date when more data is available. 
