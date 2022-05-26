@@ -58,8 +58,8 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
 - Metrics with strongest correlations to viewership:
     - Unique Topsnap Views and Unique Completers (0.93-0.98)
     - Subscribers added (0.89-0.92)
-        - strongest correlated metric to viewership out of engagement metrics (i.e subcribers, screenshots and shares)
-        - most consistently correlated metric to viewership out of the engagement metrics.  
+        - Strongest correlated metric to viewership out of engagement metrics (i.e subcribers, screenshots and shares)
+        - Most consistently correlated metric to viewership out of the engagement metrics.  
 - Shares 
     - Only strongly correlated with viewership when assessing episodes overall, and not for banger episodes 
 - Screenshots 
@@ -74,15 +74,15 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
     - Moderate linear relationship with viewership (R2 = ~0.80) - best modelled by a RLM to account for outliers.
 - Shares 
     - Asymptotic relationship with viewership, best modelled by the Michaleis-Menten equation or GAM (0.78-0.79 correlation predicted y to actual y)
-        - ** this relationship is only valid when assessing overall data, and not banger episodes specifically 
+        - ** This relationship is only valid when assessing overall data, and not banger episodes specifically 
     - Indicates a threshold value where the increase of shares becomes less relevant to the increase of unique viewers 
         - i.e as the number of shares increase, the rate of UV increase slows. 
     - Outlier influence 
-        - asymptotic relationship & Michaelis-Menten model is still valid with removal of the most extreme outliers. 
+        - Asymptotic relationship & Michaelis-Menten model is still valid with removal of the most extreme outlier. 
             - *(See Outlier influence section in [Regression_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Regression_analysis) folder)* 
 - Screenshots 
     - Linear relationship with viewership when assessing individual channel data 
-        - strong linear correlations in all individual channels except for 1 (channel_2d)
+        - Strong linear correlations in all individual channels except for 1 (channel_2d)
     - The strength and rate of this relationship is unique to each channel, indicating a potential profile pertaining to each channel where screenshots interact with viewership at different rates. 
 
 ### Bangers 
