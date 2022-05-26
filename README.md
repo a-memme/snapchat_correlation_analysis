@@ -74,7 +74,7 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
     - Moderate linear relationship with viewership (R2 = ~0.80) - best modelled by a RLM to account for outliers.
 - Shares 
     - Asymptotic relationship with viewership, best modelled by the Michaleis-Menten equation or GAM (0.78-0.79 correlation predicted y to actual y)
-        - ** This relationship is only valid when assessing overall data, and not banger episodes specifically 
+        - *This relationship is only valid when assessing overall data, and not banger episodes specifically* 
     - Indicates a threshold value where the increase of shares becomes less relevant to the increase of unique viewers 
         - i.e as the number of shares increase, the rate of UV increase slows. 
     - Outlier influence 
