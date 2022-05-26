@@ -113,7 +113,7 @@ The purpose of performing regression analyses on the following metrics is to pro
     - Correlation of predicted y to actual y = 0.74
     - Only slight changes in regression line after outlier removal
         - Great indication of robust nature of MM equation in dealing with outliers 
-    - Aymptotic relationship still maintaining validity with removal of major outlier ** - **See image below**
+- Aymptotic relationship maintaining validity with removal of major outlier ** - **See image below**
 
 ![Screen Shot 2022-05-23 at 9 30 35 PM](https://user-images.githubusercontent.com/79600550/169930470-51922488-ef1c-4271-9c5c-7eb69fdca275.png)
 
