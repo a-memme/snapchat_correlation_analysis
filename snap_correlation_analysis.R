@@ -128,9 +128,9 @@ plot(unique_viewers_diff~shares_diff, data=yearly_updated)
 #Highlight points based on different polynomial levels
 points(shares, fitted(poly_regress2), col='red', pch=20)
 points(shares, fitted(poly_regress3), col='blue', pch=20)
-points(shares, fitted(poly_regress4), col='orange', pch=20)
+points(shares, fitted(poly_regress4), col='blue', pch=20)
 points(shares, fitted(poly_regress5), col='purple', pch=20)
-points(shares, fitted(poly_regress6), col='black', pch=20)
+points(shares, fitted(poly_regress6), col='red', pch=20)
 
 
 #Try Non-linear regression methods 
@@ -149,8 +149,8 @@ cor(uvs, predict(gam_model))
 cor(uvs, predict(gam_model5))
 
 #Visualize 
-ggplot(data=inaugural20212022_fixed, aes(shares_diff, unique_viewers_diff)) + geom_point() + stat_smooth(method='gam', formula = y~s(x), size=1, se=FALSE)
-ggplot(data=inaugural20212022_fixed, aes(shares_diff, unique_viewers_diff)) + geom_point() + stat_smooth(method='gam', formula = y~s(x, k=5), size=1, se=FALSE)
+ggplot(data=yearly_updated, aes(shares_diff, unique_viewers_diff)) + geom_point() + stat_smooth(method='gam', formula = y~s(x), size=1, se=FALSE)
+ggplot(data=yearly_updated, aes(shares_diff, unique_viewers_diff)) + geom_point() + stat_smooth(method='gam', formula = y~s(x, k=5), size=1, se=FALSE)
 
 #Asymptotic Regression
 model <- drm(unique_viewers_diff ~ shares_diff, fct = DRC.asymReg(), data = yearly_updated)
@@ -174,10 +174,47 @@ summary(mm_model3)
 #2 parameters
 mmdf <- data.frame(S=seq(0, max(shares))) #length.out=165946
 mmdf$v <- predict(mm_model, newdata=mmdf)
-ggplot(data=yearly_updated, aes(shares_diff, unique_viewers_diff)) + geom_point() + geom_line(data=mmdf, aes(x=S, y=v), colour='blue')
+ggplot(data=yearly_updated, aes(shares_diff, unique_viewers_diff)) + geom_point() + geom_line(data=mmdf, aes(x=S, y=v), colour='purple')
 #3 parameters
 mmdf <- data.frame(S=seq(0, max(shares))) #length.out=165946
 mmdf$v <- predict(mm_model3, newdata=mmdf)
-ggplot(data=yearly_updated, aes(shares_diff, unique_viewers_diff)) + geom_point() + geom_line(data=mmdf, aes(x=S, y=v), colour='blue')
+ggplot(data=yearly_updated, aes(shares_diff, unique_viewers_diff)) + geom_point() + geom_line(data=mmdf, aes(x=S, y=v), colour='purple')
 
 
+
+# Removing the outlier - Shares relationship 
+#Visualize outlier/extreme outliers 
+boxplot(yearly_updated$shares_diff, main='Shares', col='orange', horizontal = TRUE, notch = TRUE)
+ggplot(yearly_updated, aes(x="", y=shares_diff)) + geom_boxplot(outlier.colour="red",outlier.size=2)
+
+#Subset 
+no_eggs <- subset(yearly_updated, yearly_updated$shares_diff < 150000)
+#Correlation Matrix (Pearson)
+no_eggs_matrix <- as.matrix(no_eggs[, c('unique_viewers_diff', 'avg_time_spent_per_user', 'unique_topsnaps_peruser', 'completion_rate', 'drop_off_rate', 'unique_completers_diff', 'unique_topsnap_views_diff', 'shares_diff', 'screenshots_diff', 'subscribers_diff')])
+cor(no_eggs_matrix)
+#Spearman correlation
+rcorr(no_eggs_matrix, type='spearman')
+
+#GAM
+gam_model_noeggs <- gam(unique_viewers_diff ~ s(shares_diff, k=4), data=no_eggs)
+#Visualize
+ggplot(data=no_eggs, aes(shares_diff, unique_viewers_diff)) + geom_point() + stat_smooth(method='gam', formula = y~s(x, k=4), size=1, level=0.95, se=FALSE)
+#Assess
+cor(no_eggs$unique_viewers_diff, predict(gam_model_noeggs))
+summary(gam_model_noeggs)
+
+#2 self starting function - 2 parameters
+mm_model_noeggs <- drm(unique_viewers_diff ~ shares_diff, fct = MM.2(), data = no_eggs)
+mmdf <- data.frame(S=seq(0, max(shares))) #length.out=165946
+mmdf$v <- predict(mm_model_noeggs, newdata=mmdf)
+ggplot(data=no_eggs, aes(shares_diff, unique_viewers_diff)) + geom_point() + geom_line(data=mmdf, aes(x=S, y=v), colour='purple')
+
+cor(no_eggs$unique_viewers_diff, predict(mm_model_noeggs))
+
+#3 self starting function - 3 parameters
+mm_model_noeggs3 <- drm(unique_viewers_diff ~ shares_diff, fct = MM.3(), data = no_eggs)
+mmdf <- data.frame(S=seq(0, max(shares))) #length.out=165946
+mmdf$v <- predict(mm_model_noeggs3, newdata=mmdf)
+ggplot(data=no_eggs, aes(shares_diff, unique_viewers_diff)) + geom_point() + geom_line(data=mmdf, aes(x=S, y=v), colour='purple')
+
+cor(no_eggs$unique_viewers_diff, predict(mm_model_noeggs3))
