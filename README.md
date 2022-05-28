@@ -54,7 +54,7 @@ To evaluate Snapchat Video performance data to uncover insights regarding:
 ## Results
 
 ### Correlations 
-*(see [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) folder)*
+*(See [Correlation_analysis](https://github.com/a-memme/snapchat_correlation_analysis/tree/main/Correlation_analysis) folder)*
 - Metrics with strongest correlations to viewership:
     - Unique Topsnap Views and Unique Completers (0.93-0.98)
     - Subscribers added (0.89-0.92)
